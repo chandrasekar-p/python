@@ -41,7 +41,7 @@ disk_threshold = 80  # in percent
 
 Run the script using:
 ```
-python disk_monitor.py
+python DiskNotify.py
 ```
 
 it will:
