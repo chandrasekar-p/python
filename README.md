@@ -22,13 +22,18 @@ This Python script monitors disk usage on a server and sends an alert to a speci
 
 ```bash
 pip install psutil requests
+```
 
 ## 🔧 Configuration
+
 Edit the script to set your Slack webhook URL:
+
 ```
 webhook_url = '<slack webhook url>'
 ```
+
 You can also change the disk usage threshold:
+
 ```
 disk_threshold = 80  # in percent
 ```
