@@ -8,7 +8,7 @@ import asyncio
 disk_threshold = 80
 
 # Set the Slack webhook URL and channel details
-webhook_url = ''
+webhook_url = '<slack webhook url>'
 
 async def send_notification_async(hostname, disk_percent):
     message = f'The disk on host ---[ {hostname} ]--- is {disk_percent}% full! Please free up some space.'
@@ -31,7 +31,7 @@ hostname = socket.gethostname()
 async def main():
     while True:
         await check_disk_usage_async(hostname)
-        await asyncio.sleep(300)  # Sleep for 20 minutes (20 mins * 60 secs)
+        await asyncio.sleep(1200)  # Sleep for 20 minutes (20 mins * 60 secs)
 
 loop = asyncio.get_event_loop()
 loop.run_until_complete(main())
