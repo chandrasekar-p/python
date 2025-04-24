@@ -1,2 +1,1 @@
-# python
-Disk Usage Monitor with Slack Alerts
+# Disk Usage Monitor with Slack Alerts
